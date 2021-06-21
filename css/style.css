@@ -1,0 +1,475 @@
+/* Main Styling */
+
+:root {
+    --page-color-light: #f4f4f4;
+    --page-color-grey: #b3b3b3;
+    --page-color-dark: #1a1a1a;
+    --page-color-green: #40bf40;
+    --animate-speed: .25s;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: var(--page-color-light);
+}
+
+/* Utility Classes */
+
+.style-light {
+    background: var(--page-color-light);
+    color: var(--page-color-green);
+}
+
+.style-green {
+    background: var(--page-color-green);
+    color: var(--page-color-light);
+}
+
+.fade-in {
+    animation: fadeIn ease 2.5s;
+    -webkit-animation: fadeIn ease 2.5s;
+    -moz-animation: fadeIn ease 2.5s;
+    -o-animation: fadeIn ease 2.5s;
+    -ms-animation: fadeIn ease 2.5s;
+}
+
+.importantText {
+    color: var(--page-color-dark);
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-out {
+    animation: fadeOut ease .5s;
+    -webkit-animation: fadeOut ease .5s;
+    -moz-animation: fadeOut ease .5s;
+    -o-animation: fadeOut ease .5s;
+    -ms-animation: fadeOut ease .5;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Main Page Styling */
+
+.page-cap {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 4rem;
+    /* transition-duration: 1s; */
+}
+
+.page {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 4rem;
+    /* transition-duration: 1s; */
+}
+
+.page-cap h1, .page h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin: 1rem;
+}
+
+.page-cap p, .page p {
+    font-size: 1.3rem;
+}
+
+.page-cap .button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border: none;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    transition: all 0.25s ease-in;
+}
+
+.page-cap .button:hover {
+    background: var(--page-color-dark);
+    color: var(--page-color-light);
+}
+
+.wholeSlide {
+    height: 85vh;
+    background: var(--page-color-green);
+    padding: 1em;
+    flex: 1;
+    background-clip: border-box;
+    border: 1em solid var(--page-color-dark);
+}
+
+.wholeSlide h1 {
+    color: var(--page-color-light);
+    text-decoration: underline;
+}
+
+.wholeSlide span {
+    text-decoration: none;
+}
+
+.wholeSlide ul {
+    color: var(--page-color-light);
+    margin-top: 9vh;
+}
+
+.wholeSlide li {
+    padding-bottom: 8vh;
+    font-size: xx-large;
+    line-height: 1.2;
+}
+
+.wholeSlide .button {
+    background: var(--page-color-light);
+    color: var(--page-color-dark);
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border: none;
+    font-size: 1.1rem;
+    transition: all 0.25s ease-in;
+}
+
+.wholeSlide .button:hover {
+    background: var(--page-color-dark);
+    color: var(--page-color-light);
+}
+
+.wholeSlide iframe {
+    height: 75vh;
+    width: 125vh;
+    display: block;
+    position: relative;
+    margin-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.75vh;
+}
+
+.firstHalf, .secondHalf {
+    height: 85vh;
+    background: var(--page-color-green);
+    padding: 1em;
+    flex: 50%;
+    background-clip: border-box;
+}
+
+.firstHalf {
+    border: 1em solid var(--page-color-dark);
+    border-right: 0.5em solid var(--page-color-dark);
+}
+
+.secondHalf {
+    border: 1em solid var(--page-color-dark);
+    border-left: 0.5em solid var(--page-color-dark);
+}
+
+.firstHalf h1, .secondHalf h1 {
+    color: var(--page-color-light);
+    text-decoration: underline;
+}
+
+.firstHalf ul, .secondHalf ul {
+    color: var(--page-color-light);
+    margin-top: 9vh;
+}
+
+.firstHalf li, .secondHalf li {
+    padding-bottom: 8vh;
+    font-size: xx-large;
+    line-height: 1.2;
+}
+
+.firstHalf .button, .secondHalf .button {
+    background: var(--page-color-light);
+    color: var(--page-color-dark);
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border: none;
+    font-size: 1.1rem;
+    transition: all 0.25s ease-in;
+}
+
+.firstHalf .button:hover, .secondHalf .button:hover {
+    background: var(--page-color-dark);
+    color: var(--page-color-light);
+}
+
+.firstHalf iframe, .secondHalf iframe {
+    display: block;
+    margin-top: 15vh;
+    margin-bottom: 22.75vh;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.firstThird, .secondThird, .thirdThird {
+    height: 85vh;
+    background: var(--page-color-green);
+    padding: 1em;
+    flex: 33.3%;
+    background-clip: border-box;
+}
+
+.firstThird {
+    border: 1em solid var(--page-color-dark);
+    border-right: 0.5em solid var(--page-color-dark);
+    background-clip: border-box;
+}
+
+.secondThird {
+    border: 1em solid var(--page-color-dark);
+    border-left: 0.5em solid var(--page-color-dark);
+    background-clip: border-box;
+}
+
+.thirdThird {
+    border: 1em solid var(--page-color-dark);
+    border-left: 0.5em solid var(--page-color-dark);
+    background-clip: border-box;
+}
+
+.firstThird h1, .secondThird h1, .thirdThird h1 {
+    color: var(--page-color-light);
+    text-decoration: underline;
+}
+
+.firstThird img, .secondThird img, .thirdThird img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 70%;
+    padding-top: 2.5vh;
+    padding-bottom: 5vh;
+}
+
+.firstThird ul, .secondThird ul, .thirdThird ul {
+    color: var(--page-color-light);
+    margin-top: 9vh;
+}
+
+.firstThird li, .secondThird li, .thirdThird li {
+    padding-bottom: 8vh;
+    font-size: xx-large;
+    line-height: 1.2;
+}
+
+.firstThird .button, .secondthird .button, .thirdThird .button {
+    background: var(--page-color-light);
+    color: var(--page-color-dark);
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border: none;
+    font-size: 1.1rem;
+    transition: all 0.25s ease-in;
+}
+
+.firstThird .button:hover, .secondThird .button:hover, .thirdThird .button:hover {
+    background: var(--page-color-dark);
+    color: var(--page-color-light);
+}
+
+/* Individual Page Styling */
+
+#page-start {
+    background: var(--page-color-green);
+    color: var(--page-color-light);
+    opacity: .99;
+}
+
+#page-start video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 1;
+    z-index: -1;
+    mix-blend-mode: overlay;
+}
+
+#page-start h1 {
+    transform: translateY(-100vh);
+    animation: heading var(--animate-speed) forwards ease-in;
+}
+
+@keyframes heading {
+    to {
+        transform: translateY(0);
+    }
+}
+
+#page-start p {
+    transform: translateX(-100vw);
+    animation: paragraph var(--animate-speed) forwards ease-in .75s;
+}
+
+@keyframes paragraph {
+    to {
+        transform: translateX(0);
+    }
+}
+
+#page-1 {
+    background: var(--page-color-light);
+    color: var(--page-color-green);
+}
+
+#page-2 {
+    background: var(--page-color-light);
+    color: var(--page-color-green);
+}
+
+#page-3 {
+    background: var(--page-color-light);
+    color: var(--page-color-green);
+}
+
+#page-4 {
+    background: var(--page-color-light);
+    color: var(--page-color-green);
+}
+
+#page-5 {
+    background: var(--page-color-light);
+    color: var(--page-color-green);
+}
+
+#page-5 .firstHalfVidTag:hover, #page-5 .secondHalfVidTag:hover {
+    color: var(--page-color-dark);
+    cursor: pointer;
+}
+
+#page-6 {
+    background: var(--page-color-light);
+    color: var(--page-color-green);
+}
+
+#page-7 {
+    background: var(--page-color-light);
+    color: var(--page-color-green);
+}
+
+#page-7 .wholeSlide li:first-child {
+    list-style: none;
+}
+
+#page-end {
+    background: var(--page-color-green);
+    color: var(--page-color-light);
+}
+
+#page-end p a {
+    color: var(--page-color-light);
+    text-decoration: none;
+    transition: all 0.25s ease-in;
+}
+
+#page-end p a:hover {
+    color: var(--page-color-dark);
+}
