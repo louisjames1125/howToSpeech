@@ -1,1 +1,1 @@
-The goal of this project was to make a website for my friend that would enable him to present his first speech in college a little easier. This was my first project using Flexbox and had a strict deadline of 2 days as well. 
+The goal of this project was to make a website for my friend that would enable him to present his first speech in college a little easier. This was my first project using Flexbox and had a strict deadline of 2 days as well. The website is at the URL http://howtoswinganiron.com
