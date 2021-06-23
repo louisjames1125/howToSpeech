@@ -1,0 +1,138 @@
+/* Main Body Styling */
+
+body {
+    overflow: none;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main Page Styling */
+
+.firstThird, .secondThird, .thirdThird {
+    height: 94vh;
+    width: 22vw;
+}
+
+.firstThird {
+    border: 0.5em solid var(--page-color-dark);
+    border-right: 0.25em solid var(--page-color-dark);
+    background-clip: border-box;
+}
+
+.secondThird {
+    border: 0.5em solid var(--page-color-dark);
+    border-left: 0.25em solid var(--page-color-dark);
+    border-right: 0.25em solid var(--page-color-dark);
+    background-clip: border-box;
+}
+
+.thirdThird {
+    border: 0.5em solid var(--page-color-dark);
+    border-left: 0.25em solid var(--page-color-dark);
+    background-clip: border-box;
+}
+
+.firstThird img, .secondThird img, .thirdThird img {
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    height: 40vh;
+    width: 22vw;
+}
+
+.firstHalf, .secondHalf {
+    height: 92vh;
+}
+
+.firstHalf h1, .secondHalf h1 {
+    font-size: 1rem;
+}
+
+.firstHalf li, .secondHalf li {
+    font-size: 0.75rem;
+}
+
+.wholeSlide {
+    height: 92vh;
+}
+
+/* Individual Page Styling */
+
+#page-1 {
+    overflow: hidden;
+    width: 100vw;
+    margin-left: -17.2vw;
+}
+
+#page-1 h1 {
+    font-size: 1rem;
+}
+
+#page-1 .secondThird h1, #page-1 .thirdThird h1 {
+    margin: 0;
+    margin-top: 1rem;
+}
+
+#page-1 .thirdThird h1 {
+    margin-bottom: -1.1rem;
+}
+
+#page-1 .firstThird .button, #page-1 .thirdThird .button {
+    font-size: .90rem;
+    padding: 0.5rem 1rem;
+}
+
+#page-2, #page-3, #page-4, #page-6 {
+    width: 100vw;
+    margin-left: -17.2vw;
+}
+
+#page-2 h1 {
+    font-size: 2.5rem;
+}
+
+#page-3 h1 {
+    font-size: 2rem;
+}
+
+#page-6 h1 {
+    font-size: 3.15rem;
+}
+
+#page-end h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10vh;
+}
+
+#page-2 li, #page-3 li, #page-6 li {
+    font-size: 1rem;
+}
+
+#page-2 ul, #page-3 ul, #page-6 ul {
+    font-size: 1rem;
+    margin-top: 12vh;
+    margin-bottom: 6vh;
+}
+
+#page-4 iframe {
+    width: 100%;
+    margin: 5vh 2vw;
+    margin-left: -0.0625vw;
+}
+
+#page-5 {
+    width: 100vw;
+    margin-left: -17.2vw;
+}
+
+#page-5 .secondHalf .button {
+    margin-top: 2.75vh;
+}
+
+#page-5 iframe {
+    width: 35vw;
+}
+
+#page-5 .firstHalf iframe {
+    margin-top: 17.25vh;
+    margin-bottom: 25.5vh;
+}

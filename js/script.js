@@ -1,4 +1,4 @@
-// Smooth Scrolling - Up + Down Animation 
+// Smooth Scrolling - (for the up + down animation on the first and last page)
 $('.up-down-animation').on('click', function (event) {
     if (this.hash !== '') {
         event.preventDefault();
@@ -12,7 +12,8 @@ $('.up-down-animation').on('click', function (event) {
     }
 });
 
-// Adding a class name of (fade-in / fade-out) on click of each next button in the main slideshow (the fade-in / fade-out classes add a cool fade affect)
+// Adding a class names (fade-in / fade-out) on click of each back and next button in the main slideshow (the fade-in / fade-out classes add a cool fade affect using opacity through style.css)
+
 $('.startPageNext').on('click', function (event) {
     var nextPage = document.getElementById("page-1");
     nextPage.classList.remove("fade-out");
@@ -121,13 +122,13 @@ $('.endPagePrevious').on('click', function (event) {
 
 });
 
+// Opeing iframes on click of each one of the h1 tags (only on the 5th page)
+
 $(".firstHalfVidTag").click(function () {
-    $(".firstHalfVidTag").css("color", "black");
     $(".firstHalfVid").html('<h1 class="leftHalfVidTag">Backswing</h1><iframe width="560" height="315" src="https://www.youtube.com/embed/4EiwXkP3Ywc" frameborder="0" allowfullscreen></iframe></iframe><a href="#page-4" class="button style-green up-down-animation page5Previous">Back <i class="fas fa-arrow-circle-left"></i></a>');
 
 });
 
 $(".secondHalfVidTag").click(function () {
-    $(".secondHalfVidTag").css("color", "black");
     $(".secondHalfVid").html('<h1 class="leftHalfVidTag">Follow-through</h1><iframe width="560" height="315" src="https://www.youtube.com/embed/tAF8ze_TbAM" frameborder="0" allowfullscreen></iframe></iframe><a href="#page-6" class="button style-green page5Next">Next <i class="fas fa-arrow-circle-right"></i></a>');
 });
